@@ -80,6 +80,7 @@ with open(os.path.join(this_directory, "README.md"), encoding="utf-8") as f:
     long_description = f.read()
 
 requirements = ["torch>=1.1.0", "numba", "numpy<1.20", "scikit-learn"]
+extra_link_args=['-L/usr/lib/x86_64-linux-gnu/']
 
 url = "https://github.com/nicolas-chaulet/torch-points-kernels"
 __version__ = "0.7.1"
